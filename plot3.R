@@ -8,7 +8,7 @@ power_data <- subset(power_data, (power_data[,1] == "2007-02-01") | (power_data[
 #setting the number of plots in the device (just for the case)
 par(mfrow = c(1,1))
 #openig PNG device
-png(filename = "plot2.png", width = 480, height = 480)
+png(filename = "plot3.png", width = 480, height = 480)
 #plotting histogramm
 with(power_data, 
 { 
@@ -17,7 +17,7 @@ with(power_data,
        type ="l",           #graph type = line
        xaxt = "n",          #no ticks on x-axis
        xlab = "",           #no x-axis name
-       ylab = "Energy sub memtering") #y-axis name
+       ylab = "Energy sub metering") #y-axis name
   #adding points with different colours
   points(Sub_metering_2, type = "l", col = "red")
   points(Sub_metering_3, type = "l", col = "blue")
