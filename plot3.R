@@ -28,5 +28,5 @@ with(power_data,
   axis(side = 1, labels = c("Thu", "Fri", "Sat"), 
        at = c(0, length(Global_active_power)/2, length(Global_active_power)), tick = TRUE)
 })
-#closing device. Now you have a "plot1.png" file in the working directory
+#closing device. Now you have a "plo3.png" file in the working directory
 dev.off()
